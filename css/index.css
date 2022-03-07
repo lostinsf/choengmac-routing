@@ -44,9 +44,9 @@ img { -webkit-user-drag: none; }
     #routing_root .pc_layout { display: none; }
 
     /* MOBILE GB */
-    #routing_root .m_layout { position: absolute; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; }
-    #routing_root .pc_layout header { position: fixed; top: 0; left: 0; padding: 0; width: 100%; z-index: 5; display: flex; justify-content: flex-start;}
-    #routing_root .pc_layout header a { display: inline-block; }
-    #routing_root .m_layout contents {display: flex; justify-content: center;}
-    #routing_root .m_layout contents img {object-fit: cover; width: calc(100% / 3); height: auto;}
+    #routing_root .m_layout { position: absolute; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: flex-start; }
+    #routing_root .m_layout header { position: fixed; top: 0; left: 0; padding: 0; width: 100%; z-index: 5; display: flex; justify-content: flex-start;}
+    #routing_root .m_layout header a { display: inline-block; }
+    #routing_root .m_layout content {display: flex; justify-content: center;}
+    #routing_root .m_layout content img {object-fit: cover; width: calc(100% / 3); height: auto;}
 }
