@@ -51,9 +51,9 @@ include_once ('config.php');
             </a>
         </header>
         <div class="content">
-            <img src="https://cheongmac.blob.core.windows.net/common/bg_intro_routing_m_01.png" border="0" href="https://혈관.com/">
-            <img src="https://cheongmac.blob.core.windows.net/common/bg_intro_routing_m_02.png" border="0" href="http://울산하지정맥류.com/">
-            <img src="https://cheongmac.blob.core.windows.net/common/bg_intro_routing_m_03.png" border="0" href="https://대구정맥류.com/">
+            <img src="https://cheongmac.blob.core.windows.net/common/bg_intro_routing_m_01.png" border="0" onclick="location.href='https://혈관.com/'">
+            <img src="https://cheongmac.blob.core.windows.net/common/bg_intro_routing_m_02.png" border="0" onclick="location.href='http://울산하지정맥류.com/'">
+            <img src="https://cheongmac.blob.core.windows.net/common/bg_intro_routing_m_03.png" border="0" onclick="location.href='http://대구정맥류.com/'">
         </div>
     </div>
 </section>
