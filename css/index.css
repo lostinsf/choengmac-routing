@@ -36,8 +36,8 @@ img { -webkit-user-drag: none; }
 #routing_root .pc_layout { position: relative; z-index: 1; width: 100%; height: 100%; display: flex; flex-direction: column; }
 #routing_root .pc_layout header { position: fixed; top: 0; left: 0; padding: 0; width: 100%; z-index: 5; display: flex; justify-content: flex-end;}
 #routing_root .pc_layout header a { display: inline-block; }
-#routing_root .pc_layout .content {background: url('https://cheongmac.blob.core.windows.net/common/bg_intro_routing.png') center center/no-repeat; width:100%; height: 100%;}
-#routing_root .pc_layout .content .menus { display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: center; align-items: flex-start; width: 100%; height: 632px; }
+#routing_root .pc_layout .content {background: url('https://cheongmac.blob.core.windows.net/common/bg_intro_routing.png') center center; width:100%; height: 100%; zindex: -1;}
+#routing_root .pc_layout .content .menus { z-index: 1; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-around; align-items: flex-end; width: 100%; height: 100%; margin-top: 60px;}
 #routing_root .pc_layout .content .menus .item { position: relative; width: 18%; margin-right: 3%; cursor: pointer; }
 #routing_root .pc_layout .content .menus .item:last-child { margin-right: 0; }
 #routing_root .pc_layout .content .menus .item img { width: 100%; }
@@ -66,7 +66,6 @@ img { -webkit-user-drag: none; }
 
 @media screen and (max-height: 1440px) {
     /* PC GB */
-    #routing_root .pc_layout .content .menus { height: 560px; }
     #routing_root .pc_layout .content .menus .item { width: 16%; }
     #routing_root .pc_layout .content .menus .item.instagram .bg { bottom: 34%; left: -180%; width: 270%; }
     #routing_root .pc_layout .content .menus .item.youtube .bg { top: -42%; left: 0; width: 410%; }
@@ -79,22 +78,10 @@ img { -webkit-user-drag: none; }
     #routing_root .pc_layout .content .menus .item.youtube .bg_icon._3 { right: -164%; top: -56%; width: 66%; }
     #routing_root .pc_layout .content .menus .item.blog .bg_icon._1 { right: -130%; top: 6%; width: 82%; }
     #routing_root .pc_layout .content .menus .item.blog .bg_icon._2 { right: -110%; top: 6%; width: 64%; }
-}
-
-
-@media screen and (max-width: 1920px) {
-    /* PC GB */
-    #routing_root .pc_layout .content .menus { height: 480px; }
-}
-
-@media screen and (max-height: 980px) {
-    /* PC GB */
-    #routing_root .pc_layout .content .menus { height: 440px; }
 }
 
 @media screen and (max-width: 1760px) {
     /* PC GB */
-    #routing_root .pc_layout .content .menus { height: 432px; }
     #routing_root .pc_layout .content .menus .item { width: 16%; }
     #routing_root .pc_layout .content .menus .item.instagram .bg { bottom: 34%; left: -180%; width: 270%; }
     #routing_root .pc_layout .content .menus .item.youtube .bg { top: -42%; left: 0; width: 410%; }
@@ -108,27 +95,6 @@ img { -webkit-user-drag: none; }
     #routing_root .pc_layout .content .menus .item.blog .bg_icon._1 { right: -130%; top: 6%; width: 82%; }
     #routing_root .pc_layout .content .menus .item.blog .bg_icon._2 { right: -110%; top: 6%; width: 64%; }
 }
-
-@media screen and (max-width: 1600px) {
-    /* PC GB */
-    #routing_root .pc_layout .content .menus { height: 392px; }
-}
-
-@media screen and (max-height: 840px) {
-    /* PC GB */
-    #routing_root .pc_layout .content .menus { height: 340px; }
-}
-
-@media screen and (max-width: 1440px) {
-    /* PC GB */
-    #routing_root .pc_layout .content .menus { height: 340px; }
-}
-
-@media screen and (max-width: 1280px) {
-    /* PC GB */
-    #routing_root .pc_layout .content .menus { height: 292px; }
-}
-
 @media screen and (max-width: 1140px) {
     /* PC GB */
     #routing_root .pc_layout { display: none; }
