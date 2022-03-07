@@ -34,6 +34,7 @@ include_once ('config.php');
         <div class="content">
             <div class="menus">
                 <div class="item instagram" sns_type="instagram" onclick="sns_view('instagram')">
+                    다시보기
                     <img class="thumbnail" src="<?=ST_COMMON_URL?>/img_sns_root_instagram.svg"/>
                     <div class="bg"></div>
                     <img class="bg_icon _1" src="<?=ST_COMMON_URL?>/img_sns_root_instagram_icon1.png" />
@@ -41,6 +42,7 @@ include_once ('config.php');
                     <img class="bg_icon _3 scale" src="<?=ST_COMMON_URL?>/img_sns_root_instagram_icon3.png" />
                 </div>
                 <div class="item youtube" sns_type="youtube" onclick="sns_view('youtube')">
+                    다시보기
                     <img class="thumbnail" src="<?=ST_COMMON_URL?>/img_sns_root_youtube.svg"/>
                     <div class="bg"></div>
                     <img class="bg_icon _1" src="<?=ST_COMMON_URL?>/img_sns_root_youtube_icon1.png" />
@@ -48,6 +50,7 @@ include_once ('config.php');
                     <img class="bg_icon _3 scale" src="<?=ST_COMMON_URL?>/img_sns_root_youtube_icon3.png" />
                 </div>
                 <div class="item blog" sns_type="blog" onclick="sns_view('blog')">
+                    다시보기
                     <img class="thumbnail" src="<?=ST_COMMON_URL?>/img_sns_root_blog.svg"/>
                     <div class="bg"></div>
                     <img class="bg_icon _1" src="<?=ST_COMMON_URL?>/img_sns_root_blog_icon1.png" />
