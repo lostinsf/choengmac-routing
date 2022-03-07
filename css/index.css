@@ -1,0 +1,201 @@
+@charset "utf-8";
+/*
+ * File       : index.css
+ * Author     : SMART GEO
+ * Guideline  : -
+ * Update : 2022-03-07
+ *
+ * SUMMARY:
+ * 01) RESET
+ * 02) CUSTOM
+ */
+
+
+/* **************************************** *
+ * 01) RESET
+ * **************************************** */
+
+@font-face { font-family: 'GmarketSansMedium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Pretendard-Regular'; src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff'); font-weight: 400; font-style: normal; }
+@font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+img { -webkit-user-drag: none; }
+@keyframes flipInX { 0% { transform: perspective(400px) rotateX(90deg); animation-timing-function: ease-in; opacity: 0; } 40% { transform: perspective(400px) rotateX(-20deg); animation-timing-function: ease-in; opacity: 1; } 60% { transform: perspective(400px) rotateX(10deg); opacity: 1; } 80% { transform: perspective(400px) rotateX(-5deg); opacity: 1; } to { transform: perspective(400px); opacity: 1; } }
+
+
+/* **************************************** *
+ * 02) CUSTOM
+ * **************************************** */
+
+/* SECTION */
+#routing_root { width: 100%; height: 100%; overflow: hidden; background-color: #F9F9F9; }
+
+/* PC GB */
+#routing_root .m_layout { display: none; }
+#routing_root .pc_layout { position: relative; z-index: 1; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: space-between; }
+#routing_root .pc_layout header { position: fixed; top: 0; left: 0; padding: 58px 80px 52px 86px ; width: 100%; z-index: 5; }
+#routing_root .pc_layout header a { display: inline-block; width: 13%; }
+#routing_root .pc_layout .title { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; margin-top: 140px; text-align: center; }
+#routing_root .pc_layout .title h2 { width: 476px; height: 70px; line-height: 70px; border-radius: 70px; background-color: #111111; color: #ffffff; margin-bottom: 40px; font-family: "Pretendard", sans-serif; font-size: 48px; font-weight: normal; opacity: 0; animation: flipInX forwards 1.6s; }
+#routing_root .pc_layout .title h1 { font-size: 114px; line-height: 1; margin-bottom: 12px; font-family: "GmarketSansBold", sans-serif; color: #111111; opacity: 0; animation: flipInX forwards 1.6s; }
+#routing_root .pc_layout .title h1 .light { position: relative; top: -8px; display: inline-block; width: 110px; height: 110px; line-height: 110px; border-radius: 50%; font-family: "Pretendard", sans-serif; font-size: 83px; margin-right: 12px; color: #ffffff; transition: background-color .3s; }
+#routing_root .pc_layout .title h1 .light.red { background-color: #111111; }
+#routing_root .pc_layout .title h1 .light.yellow { background-color: #111111; }
+#routing_root .pc_layout .title h1 .light.green { background-color: #111111; }
+#routing_root .pc_layout .title h1 .light:last-child { margin-right: 0; }
+#routing_root .pc_layout .content .menus { display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: center; align-items: flex-start; width: 100%; height: 632px; }
+#routing_root .pc_layout .content .menus .item { position: relative; width: 18%; margin-right: 3%; cursor: pointer; }
+#routing_root .pc_layout .content .menus .item:last-child { margin-right: 0; }
+#routing_root .pc_layout .content .menus .item img { width: 100%; }
+#routing_root .pc_layout .content .menus .item .thumbnail { transition: all .5s; }
+#routing_root .pc_layout .content .menus .item .thumbnail:hover { transform: translateY(-10%); }
+#routing_root .pc_layout .content .menus .item .bg { position: absolute; z-index: -1; height: 30%; transform: rotate(336deg); transition: all .5s; }
+#routing_root .pc_layout .content .menus .item.instagram .bg { bottom: 37%; left: -130%; width: 210%; background-color: #FFFFFF; }
+#routing_root .pc_layout .content .menus .item.youtube .bg { top: -40%; left: 0; width: 370%; background-color: #FFFFFF; }
+#routing_root .pc_layout .content .menus .item.blog .bg { bottom: 33%; left: 2%; width: 240%; background-color: #FFFFFF; }
+#routing_root .pc_layout .content .menus .item .bg_icon { position: absolute; z-index: -1; }
+#routing_root .pc_layout .content .menus .item .bg_icon.scale { transition: all .5s; transform: scale(1); }
+#routing_root .pc_layout .content .menus .item.instagram .bg_icon._1 { left: -46%; top: -52%; width: 86%; }
+#routing_root .pc_layout .content .menus .item.instagram .bg_icon._2 { left: -94%; top: 36%; width: 34%; }
+#routing_root .pc_layout .content .menus .item.instagram .bg_icon._3 { left: -66%; top: 28%; width: 38%; }
+#routing_root .pc_layout .content .menus .item.youtube .bg_icon._1 { right: -38%; top: -25%; width: 28%; }
+#routing_root .pc_layout .content .menus .item.youtube .bg_icon._2 { right: -166%; top: -80%; width: 34%; }
+#routing_root .pc_layout .content .menus .item.youtube .bg_icon._3 { right: -134%; top: -52%; width: 62%; }
+#routing_root .pc_layout .content .menus .item.blog .bg_icon._1 { right: -100%; top: 10%; width: 74%; }
+#routing_root .pc_layout .content .menus .item.blog .bg_icon._2 { right: -82%; top: 10%; width: 62%; }
+
+/* ACTIVE */
+#routing_root .pc_layout .title h1 .light.red.active { background-color: #E6291E; }
+#routing_root .pc_layout .title h1 .light.yellow.active { background-color: #FFC93D; }
+#routing_root .pc_layout .title h1 .light.green.active { background-color: #08C45A; }
+#routing_root .pc_layout .content .menus .item.instagram.active .bg { background-color: #FDD65D; }
+#routing_root .pc_layout .content .menus .item.youtube.active .bg { background-color: #E6291E; }
+#routing_root .pc_layout .content .menus .item.blog.active .bg { background-color: #09C65B; }
+#routing_root .pc_layout .content .menus .item.active .bg_icon.scale { transform: scale(1.18); }
+
+@media screen and (max-height: 1440px) {
+    /* PC GB */
+    #routing_root .pc_layout .title { margin-top: 120px; }
+    #routing_root .pc_layout .title h2 { width: 420px; height: 64px; line-height: 64px; font-size: 41px; margin-bottom: 36px; }
+    #routing_root .pc_layout .title h1 { font-size: 98px; }
+    #routing_root .pc_layout .title h1 .light { width: 96px; height: 96px; line-height: 96px; font-size: 56px; }
+    #routing_root .pc_layout .content .menus { height: 560px; }
+    #routing_root .pc_layout .content .menus .item { width: 16%; }
+    #routing_root .pc_layout .content .menus .item.instagram .bg { bottom: 34%; left: -180%; width: 270%; }
+    #routing_root .pc_layout .content .menus .item.youtube .bg { top: -42%; left: 0; width: 410%; }
+    #routing_root .pc_layout .content .menus .item.blog .bg { bottom: 38%; width: 300%; }
+    #routing_root .pc_layout .content .menus .item.instagram .bg_icon._1 { left: -68%; top: -60%; width: 90%; }
+    #routing_root .pc_layout .content .menus .item.instagram .bg_icon._2 { left: -116%; top: 38%; width: 36%; }
+    #routing_root .pc_layout .content .menus .item.instagram .bg_icon._3 { left: -84%; top: 28%; width: 39%; }
+    #routing_root .pc_layout .content .menus .item.youtube .bg_icon._1 { right: -48%; top: -24%; width: 29%; }
+    #routing_root .pc_layout .content .menus .item.youtube .bg_icon._2 { right: -220%; top: -92%; width: 35%; }
+    #routing_root .pc_layout .content .menus .item.youtube .bg_icon._3 { right: -164%; top: -56%; width: 66%; }
+    #routing_root .pc_layout .content .menus .item.blog .bg_icon._1 { right: -130%; top: 6%; width: 82%; }
+    #routing_root .pc_layout .content .menus .item.blog .bg_icon._2 { right: -110%; top: 6%; width: 64%; }
+}
+
+@media screen and (max-height: 1240px) {
+    /* PC GB */
+    #routing_root .pc_layout .title { margin-top: 108px; }
+    #routing_root .pc_layout .title h2 { width: 400px; height: 60px; line-height: 60px; font-size: 37px; margin-bottom: 36px; }
+    #routing_root .pc_layout .title h1 { font-size: 92px; }
+    #routing_root .pc_layout .title h1 .light { top: -10px; width: 80px; height: 80px; line-height: 80px; font-size: 50px; margin-right: 8px; }
+}
+
+@media screen and (max-width: 1920px) {
+    /* PC GB */
+    #routing_root .pc_layout .title { margin-top: 108px; }
+    #routing_root .pc_layout .title h2 { width: 376px; height: 50px; line-height: 50px; font-size: 32px; margin-bottom: 36px; }
+    #routing_root .pc_layout .title h1 { font-size: 74px; }
+    #routing_root .pc_layout .title h1 .light { top: -8px; width: 66px; height: 66px; line-height: 66px; font-size: 44px; margin-right: 8px; }
+    #routing_root .pc_layout .content .menus { height: 480px; }
+}
+
+@media screen and (max-height: 980px) {
+    /* PC GB */
+    #routing_root .pc_layout .title { margin-top: 100px; }
+    #routing_root .pc_layout .title h2 { width: 340px; height: 46px; line-height: 46px; font-size: 27px; margin-bottom: 32px; }
+    #routing_root .pc_layout .title h1 { font-size: 70px; }
+    #routing_root .pc_layout .title h1 .light { top: -6px; width: 62px; height: 62px; line-height: 62px; font-size: 42px; margin-right: 8px; }
+    #routing_root .pc_layout .content .menus { height: 440px; }
+}
+
+@media screen and (max-width: 1760px) {
+    /* PC GB */
+    #routing_root .pc_layout .title { margin-top: 96px; }
+    #routing_root .pc_layout .title h2 { width: 340px; height: 46px; line-height: 46px; font-size: 27px; margin-bottom: 32px; }
+    #routing_root .pc_layout .title h1 { font-size: 70px; }
+    #routing_root .pc_layout .title h1 .light { top: -6px; width: 62px; height: 62px; line-height: 62px; font-size: 42px; margin-right: 8px; }
+    #routing_root .pc_layout .content .menus { height: 432px; }
+    #routing_root .pc_layout .content .menus .item { width: 16%; }
+    #routing_root .pc_layout .content .menus .item.instagram .bg { bottom: 34%; left: -180%; width: 270%; }
+    #routing_root .pc_layout .content .menus .item.youtube .bg { top: -42%; left: 0; width: 410%; }
+    #routing_root .pc_layout .content .menus .item.blog .bg { bottom: 38%; width: 300%; }
+    #routing_root .pc_layout .content .menus .item.instagram .bg_icon._1 { left: -68%; top: -60%; width: 90%; }
+    #routing_root .pc_layout .content .menus .item.instagram .bg_icon._2 { left: -116%; top: 38%; width: 36%; }
+    #routing_root .pc_layout .content .menus .item.instagram .bg_icon._3 { left: -84%; top: 28%; width: 39%; }
+    #routing_root .pc_layout .content .menus .item.youtube .bg_icon._1 { right: -48%; top: -24%; width: 29%; }
+    #routing_root .pc_layout .content .menus .item.youtube .bg_icon._2 { right: -220%; top: -92%; width: 35%; }
+    #routing_root .pc_layout .content .menus .item.youtube .bg_icon._3 { right: -164%; top: -56%; width: 66%; }
+    #routing_root .pc_layout .content .menus .item.blog .bg_icon._1 { right: -130%; top: 6%; width: 82%; }
+    #routing_root .pc_layout .content .menus .item.blog .bg_icon._2 { right: -110%; top: 6%; width: 64%; }
+}
+
+@media screen and (max-width: 1600px) {
+    /* PC GB */
+    #routing_root .pc_layout .content .menus { height: 392px; }
+}
+
+@media screen and (max-height: 840px) {
+    /* PC GB */
+    #routing_root .pc_layout .title { margin-top: 74px; }
+    #routing_root .pc_layout .title h2 { width: 272px; height: 38px; line-height: 38px; font-size: 23px; margin-bottom: 26px; }
+    #routing_root .pc_layout .title h1 { font-size: 62px; margin-bottom: 10px; }
+    #routing_root .pc_layout .title h1 .light { top: -7px; width: 56px; height: 56px; line-height: 56px; font-size: 35px; margin-right: 6px; }
+    #routing_root .pc_layout .content .menus { height: 340px; }
+}
+
+@media screen and (max-width: 1440px) {
+    /* PC GB */
+    #routing_root .pc_layout .title h2 { width: 260px; height: 36px; line-height: 36px; font-size: 22px; margin-bottom: 28px; }
+    #routing_root .pc_layout .title h1 { font-size: 50px; }
+    #routing_root .pc_layout .title h1 .light { top: -5px; width: 52px; height: 52px; line-height: 52px; font-size: 35px; margin-right: 6px; }
+    #routing_root .pc_layout .content .menus { height: 340px; }
+}
+
+@media screen and (max-width: 1280px) {
+    /* PC GB */
+    #routing_root .pc_layout .title h2 { width: 232px; height: 34px; line-height: 34px; font-size: 20px; margin-bottom: 26px; }
+    #routing_root .pc_layout .title h1 { font-size: 46px; }
+    #routing_root .pc_layout .title h1 .light { top: -3px; width: 46px; height: 46px; line-height: 46px; font-size: 32px; }
+    #routing_root .pc_layout .content .menus { height: 292px; }
+}
+
+@media screen and (max-width: 1140px) {
+    /* PC GB */
+    #routing_root .pc_layout { display: none; }
+
+    /* MOBILE GB */
+    #routing_root .m_layout { padding: 52px 24px 44px; display: flex; flex-direction: column; align-items: center; justify-content: space-around; height: 100%; }
+    #routing_root .m_layout img { width: 100%; }
+    #routing_root .m_layout .title { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; text-align: center; width: 100%; }
+    #routing_root .m_layout .title h2 { width: 178px; height: 30px; line-height: 30px; border-radius: 30px; background-color: #000000; color: #ffffff; margin-bottom: 18px; font-family: "Pretendard", sans-serif; font-size: 19px; font-weight: normal; opacity: 0; animation: flipInX forwards 1.6s; }
+    #routing_root .m_layout .title h1 { font-size: 37px; line-height: 1; margin-bottom: 6px; font-family: "GmarketSansBold", sans-serif; color: #000000; opacity: 0; animation: flipInX forwards 1.6s; }
+    #routing_root .m_layout .title h1 .light { position: relative; top: -4px; display: inline-block; width: 36px; height: 36px; line-height: 36px; border-radius: 50%; font-family: "Pretendard", sans-serif; font-size: 24px; margin-right: 4px; color: #ffffff; transition: background-color .3s; }
+    #routing_root .m_layout .title h1 .light.red { background-color: #111111; }
+    #routing_root .m_layout .title h1 .light.yellow { background-color: #111111; }
+    #routing_root .m_layout .title h1 .light.green { background-color: #111111; }
+    #routing_root .m_layout .title h1 .light:last-child { margin-right: 0; }
+    #routing_root .m_layout .content .item { margin-bottom: 18px; opacity: 0; }
+    #routing_root .m_layout .logo { text-align: center; }
+    #routing_root .m_layout .logo img { position: relative; left: -2px; width: 50%; }
+
+    /* ACTIVE */
+    #routing_root .m_layout .title h1 .light.red.active { background-color: #E6291E; }
+    #routing_root .m_layout .title h1 .light.yellow.active { background-color: #FFC93D; }
+    #routing_root .m_layout .title h1 .light.green.active { background-color: #08C45A; }
+    #routing_root .m_layout .content .item.youtube.active { animation: flipInX forwards .3s; }
+    #routing_root .m_layout .content .item.instagram.active { animation: flipInX forwards .3s; }
+    #routing_root .m_layout .content .item.blog.active { animation: flipInX forwards .3s; }
+}
