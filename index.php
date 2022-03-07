@@ -24,15 +24,13 @@ include_once ('config.php');
     <!-- PC -->
     <div class="pc_layout">
         <header>
-            <a href="https://www.yeshazi.com">
-                <img src="<?=ST_COMMON_URL?>/ic_header_logo.svg">
+            <a href="https://blog.naver.com/hiphoppoemic">
+                <img src="<?=ST_COMMON_URL?>/gif_intro_blog.gif">
+            </a>
+            <a href="https://www.facebook.com/yeshazi">
+                <img src="<?=ST_COMMON_URL?>/gif_intro_facebook.gif">
             </a>
         </header>
-        <div class="title">
-            <h2>스마트한<strong>의료생활</strong></h2>
-            <h1 id="setTitle">새롭게 그려내는</h1>
-            <h1 id="setSubject">청맥병원 <span class="light red">S</span><span class="light yellow">N</span><span class="light green">S</span></h1>
-        </div>
         <div class="content">
             <div class="menus">
                 <div class="item instagram" sns_type="instagram" onclick="sns_view('instagram')">
