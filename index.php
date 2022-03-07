@@ -51,12 +51,9 @@ include_once ('config.php');
             </a>
         </header>
         <div class="content">
-            <img src="https://cheongmac.blob.core.windows.net/common/bg_intro_routing_m.png" border="0" usemap="#Map1">
-            <map name="Map1" id="Map1">
-                <area target="_blank" shape="rect" coords="97,576,276,635" href="https://혈관.com/" >
-                <area target="_blank" shape="rect" coords="696,576,874,633" href="http://울산하지정맥류.com">
-                <area target="_blank" shape="rect" coords="1120,574,1308,631" href="http://대구정맥류.com/" >
-            </map>
+            <img src="https://cheongmac.blob.core.windows.net/common/bg_intro_routing_m_01.png" border="0" href="https://혈관.com/">
+            <img src="https://cheongmac.blob.core.windows.net/common/bg_intro_routing_m_02.png" border="0" href="http://울산하지정맥류.com/">
+            <img src="https://cheongmac.blob.core.windows.net/common/bg_intro_routing_m_03.png" border="0" href="https://대구정맥류.com/">
         </div>
     </div>
 </section>
