@@ -48,4 +48,5 @@ img { -webkit-user-drag: none; }
     #routing_root .m_layout header { position: fixed; top: 0; left: 0; padding: 0; width: 100%; z-index: 5; display: flex; justify-content: flex-start;}
     #routing_root .m_layout header a { display: inline-block; }
     #routing_root .m_layout .content {display: flex; flex-direction: column;}
+    #routing_root .m_layout .content img{cursor: pointer}
 }
