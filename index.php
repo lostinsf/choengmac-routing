@@ -24,7 +24,7 @@ include_once ('config.php');
     <!-- PC -->
     <div class="pc_layout">
         <header>
-            <a href="https://blog.naver.com/hiphoppoemic">
+            <a href="https://blog.naver.com/yeshazi">
                 <img src="<?=ST_COMMON_URL?>/gif_intro_blog.gif">
             </a>
             <a href="https://www.facebook.com/yeshazi">
@@ -43,7 +43,7 @@ include_once ('config.php');
     <!-- MOBILE -->
     <div class="m_layout">
         <header>
-            <a href="https://blog.naver.com/hiphoppoemic">
+            <a href="https://m.blog.naver.com/yeshazi">
                 <img src="<?=ST_COMMON_URL?>/gif_intro_blog.gif">
             </a>
             <a href="https://www.facebook.com/yeshazi">
